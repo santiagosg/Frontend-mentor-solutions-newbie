@@ -1,3 +1,15 @@
 /**
  * Basic Attribution style for frontend challenges
  */
+
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.688rem; // 11px
+  text-align: center;
+
+  & > a {
+    display: inline-block;
+    color: hsl(228, 45%, 44%);
+  }
+}

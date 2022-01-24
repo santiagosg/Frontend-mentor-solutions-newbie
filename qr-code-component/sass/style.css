@@ -227,6 +227,18 @@ body {
 /**
  * Basic Attribution style for frontend challenges
  */
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  font-size: 0.688rem;
+  text-align: center;
+}
+
+.attribution > a {
+  display: inline-block;
+  color: #3e52a3;
+}
+
 /**
  * Basic QR card style
  */
