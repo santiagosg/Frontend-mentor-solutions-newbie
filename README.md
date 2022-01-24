@@ -14,6 +14,6 @@ Frontend Mentor Profile: [@santiagosg](https://www.frontendmentor.io/profile/san
 
 | Challenge | Code | Live URL | Frontendmentor Solution  |
 |---|---|---|---|
-| **[QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)** | [Repository](#) | [Live Solution](/#) | [Frontendmentor URL](#) |
+| **[QR code component](https://www.frontendmentor.io/challenges/qr-code-component-iux_sIO_H)** | [Repository](https://github.com/santiagosg/Frontend-mentor-solutions-newbie/tree/main/qr-code-component) | [Live Solution](https://santiagosg.github.io/Frontend-mentor-solutions-newbie/qr-code-component/) | [Frontendmentor URL](https://www.frontendmentor.io/solutions/qr-code-component-htmlcsssass-XWPvx7pS_) |
 
 <!-- | **[Name of challenge](#)** | [Repository](#) | [Live Solution](/#) | [Frontendmentor URL](#) | -->
