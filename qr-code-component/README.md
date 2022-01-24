@@ -20,7 +20,7 @@ This is a solution to the [QR code component challenge on Frontend Mentor](https
 ### Links
 
 - Live Site URL: [live url](https://santiagosg.github.io/Frontend-mentor-solutions-newbie/qr-code-component/)
-- Fronendmentor Solution: [frontendmentor URL](#)
+- Frontendmentor Solution: [frontendmentor URL](https://www.frontendmentor.io/solutions/qr-code-component-htmlcsssass-XWPvx7pS_)
 
 ## My process
 
