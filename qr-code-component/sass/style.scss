@@ -1,7 +1,10 @@
-@import 'abstracts/variables';
+@import "abstracts/variables";
 
-@import 'base/reset';
-@import 'base/base';
-@import 'base/typography';
+@import "base/reset";
+@import "base/base";
+@import "base/typography";
+
+@import "components/atribution";
+@import "components/card";
 
 @import "pages/home";

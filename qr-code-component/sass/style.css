@@ -1,4 +1,12 @@
 @charset "UTF-8";
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --main-typography: "Outfit", sans-serif;
+}
+
 /**
  * Reset CSS PRO
  * Shamelessly borrowed from Eduardo Fierro:
@@ -207,7 +215,65 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: var(--main-typography);
+  font-size: 0.938rem;
+  line-height: 1.4;
+}
+
 /**
  * Basic typography style for copy text
  */
+/**
+ * Basic Attribution style for frontend challenges
+ */
+/**
+ * Basic QR card style
+ */
+.card {
+  max-width: 20rem;
+  width: 100%;
+  padding: 1rem;
+  background-color: var(--color-white);
+  border-radius: 1.25rem;
+}
+
+.card__img {
+  max-width: 18rem;
+  max-height: 18rem;
+  border-radius: 0.625rem;
+}
+
+.card__title {
+  margin: 1.875rem 1.25rem 0;
+  font-size: 1.344rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--color-dark-blue);
+}
+
+.card__description {
+  margin: 1.25rem 1.25rem 25px;
+  font-weight: 400;
+  text-align: center;
+  color: var(--color-grayish-blue);
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-light-gray);
+}
 /*# sourceMappingURL=style.css.map */
