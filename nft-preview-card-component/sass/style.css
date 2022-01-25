@@ -206,4 +206,22 @@ body {
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
+
+/**
+ * Basic Attribution style for frontend challenges
+ */
+.attribution {
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  font-size: 0.688rem;
+  text-align: center;
+}
+
+.attribution > a {
+  display: inline-block;
+  color: #3e52a3;
+}
 /*# sourceMappingURL=style.css.map */
