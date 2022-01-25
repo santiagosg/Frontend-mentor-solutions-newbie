@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+  // COLOR CUSTOM PROPERTIES
+  --color-primary-1: hsl(215, 51%, 70%);
+  --color-primary-2: hsl(178, 100%, 50%);
+
+  --color-secondary-1: hsl(217, 54%, 11%);
+  --color-secondary-2: hsl(216, 50%, 16%);
+  --color-secondary-3: hsl(215, 32%, 27%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  // TYPOGRAPHY CUSTOM PROPERTIES
+  --main-typography: "Outfit", sans-serif;
+}
