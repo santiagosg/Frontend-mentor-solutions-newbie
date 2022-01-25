@@ -1,0 +1,96 @@
+/**
+ * Basic NFT preview card component style
+ */
+
+.card {
+  max-width: 21.875rem; // 350px
+  padding: 1.25rem 1.5rem; // 20px 24px
+  box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  background-color: var(--color-secondary-2);
+
+  display: grid;
+  grid-template-columns: [start-card] 1fr [middle-card] 1fr [end-card];
+  grid-template-rows: repeat(5, min-content);
+  row-gap: 22px;
+
+  &__img {
+    width: 100%;
+    grid-column: start-card / end-card;
+    border-radius: 10px;
+  }
+
+  &__img-view {
+    display: none;
+    grid-column: start-card / end-card;
+  }
+
+  &__title {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-white);
+    grid-column: start-card / end-card;
+  }
+
+  &__description {
+    color: var(--color-primary-1);
+    grid-column: start-card / end-card;
+  }
+
+  &__price {
+    grid-column: start-card / middle-card;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+
+    &-icon {
+      width: 0.688rem; // 11px
+    }
+
+    &-value {
+      color: var(--color-primary-2);
+    }
+  }
+
+  &__date {
+    grid-column: middle-card / end-card;
+    justify-self: end;
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+
+    &-icon {
+      width: 1rem;
+    }
+
+    &-value {
+      color: var(--color-primary-1);
+      font-size: 15px;
+    }
+  }
+
+  &__author {
+    grid-column: start-card / end-card;
+    display: flex;
+    align-items: center;
+    column-gap: 1rem;
+    padding: 1rem 0;
+    border-top: 1px solid var(--color-secondary-3);
+
+    &-img {
+      width: 2.063rem; // 33px
+      border: 1px solid var(--color-white);
+      border-radius: 50%;
+    }
+
+    &-data {
+      color: var(--color-primary-1);
+      font-size: 15px;
+    }
+
+    &-name {
+      color: var(--color-white);
+    }
+  }
+}

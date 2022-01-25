@@ -217,6 +217,14 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: var(--main-typography);
+  font-size: 1.125rem;
+  line-height: 1.4;
+  letter-spacing: 0.5px;
+  color: var(--color-primary-1);
+}
+
 /**
  * Basic Attribution style for frontend challenges
  */
@@ -233,5 +241,138 @@ body {
 .attribution > a {
   display: inline-block;
   color: #3e52a3;
+}
+
+/**
+ * Basic NFT preview card component style
+ */
+.card {
+  max-width: 21.875rem;
+  padding: 1.25rem 1.5rem;
+  -webkit-box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.4);
+          box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.4);
+  border-radius: 1rem;
+  background-color: var(--color-secondary-2);
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: [start-card] 1fr [middle-card] 1fr [end-card];
+      grid-template-columns: [start-card] 1fr [middle-card] 1fr [end-card];
+  -ms-grid-rows: (min-content)[5];
+      grid-template-rows: repeat(5, -webkit-min-content);
+      grid-template-rows: repeat(5, min-content);
+  row-gap: 22px;
+}
+
+.card__img {
+  width: 100%;
+  grid-column: start-card / end-card;
+  border-radius: 10px;
+}
+
+.card__img-view {
+  display: none;
+  grid-column: start-card / end-card;
+}
+
+.card__title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-white);
+  grid-column: start-card / end-card;
+}
+
+.card__description {
+  color: var(--color-primary-1);
+  grid-column: start-card / end-card;
+}
+
+.card__price {
+  grid-column: start-card / middle-card;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.card__price-icon {
+  width: 0.688rem;
+}
+
+.card__price-value {
+  color: var(--color-primary-2);
+}
+
+.card__date {
+  grid-column: middle-card / end-card;
+  justify-self: end;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 0.5rem;
+          column-gap: 0.5rem;
+}
+
+.card__date-icon {
+  width: 1rem;
+}
+
+.card__date-value {
+  color: var(--color-primary-1);
+  font-size: 15px;
+}
+
+.card__author {
+  grid-column: start-card / end-card;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-column-gap: 1rem;
+          column-gap: 1rem;
+  padding: 1rem 0;
+  border-top: 1px solid var(--color-secondary-3);
+}
+
+.card__author-img {
+  width: 2.063rem;
+  border: 1px solid var(--color-white);
+  border-radius: 50%;
+}
+
+.card__author-data {
+  color: var(--color-primary-1);
+  font-size: 15px;
+}
+
+.card__author-name {
+  color: var(--color-white);
+}
+
+.main {
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-secondary-1);
 }
 /*# sourceMappingURL=style.css.map */
