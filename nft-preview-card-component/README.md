@@ -16,11 +16,12 @@ This is a solution to the [NFT preview card component challenge on Frontend Ment
 ### Screenshot
 
 ![](./images/solution-card-w1440.jpg)
+![](./images/solution-card-w375.jpg)
 
 ### Links
 
 - Live Site URL: [live url](https://santiagosg.github.io/Frontend-mentor-solutions-newbie/nft-preview-card-component/)
-- Frontendmentor Solution: [frontendmentor URL](https://www.frontendmentor.io/solutions/#)
+- Frontendmentor Solution: [frontendmentor URL](https://www.frontendmentor.io/solutions/nft-preview-card-component-ELww-WGKR)
 
 ## My process
 
