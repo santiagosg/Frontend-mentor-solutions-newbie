@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+  // COLOR CUSTOM PROPERTIES
+  --color-primary-1: hsl(225, 100%, 94%);
+  --color-primary-2: hsl(245, 75%, 52%);
+
+  --color-secondary-1: hsl(225, 100%, 98%);
+  --color-secondary-2: hsl(224, 23%, 55%);
+  --color-secondary-3: hsl(223, 47%, 23%);
+
+  --color-white: hsl(0, 0%, 100%);
+
+  // TYPOGRAPHY CUSTOM PROPERTIES
+  --main-typography: "Red Hat Display", sans-serif;
+}
