@@ -216,4 +216,31 @@ body {
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
 }
+
+body {
+  font-family: var(--main-typography);
+  font-size: 1rem;
+  line-height: 1.4;
+  color: var(--color-secondary-2);
+}
+
+.main {
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-primary-1);
+  padding: 0 1.25rem;
+}
 /*# sourceMappingURL=style.css.map */
