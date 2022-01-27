@@ -2,6 +2,7 @@
 :root {
   --color-primary-1: hsl(225, 100%, 94%);
   --color-primary-2: hsl(245, 75%, 52%);
+  --color-primary-2-alpha: hsl(245, 75%, 52%, 0.65);
   --color-secondary-1: hsl(225, 100%, 98%);
   --color-secondary-2: hsl(224, 23%, 55%);
   --color-secondary-3: hsl(223, 47%, 23%);
@@ -264,12 +265,35 @@ body {
 
 .card__btn {
   margin-bottom: 1.5rem;
+  width: 85%;
 }
 
 .card__link {
   margin: 0 1.5rem 0;
   font-size: 0.7rem;
   font-weight: 700;
+}
+
+.btn {
+  background-color: var(--color-primary-2);
+  color: var(--color-white);
+  padding: 0.9rem;
+  text-align: center;
+  border-radius: 0.625rem;
+  -webkit-box-shadow: 0px 5px 35px var(--color-secondary-2);
+          box-shadow: 0px 5px 35px var(--color-secondary-2);
+  cursor: pointer;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+
+.btn:hover, .btn:active {
+  background-color: var(--color-primary-2-alpha);
+}
+
+.btn:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
 }
 
 .main {

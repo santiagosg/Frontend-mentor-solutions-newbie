@@ -1,0 +1,23 @@
+// -----------------------------------------------------------------------------
+// This file contains all btn component style.
+// -----------------------------------------------------------------------------
+
+.btn {
+    background-color: var(--color-primary-2);
+    color: var(--color-white);
+    padding: 0.9rem;
+    text-align: center;
+    border-radius: 0.625rem;  // 10px
+    box-shadow: 0px 10px 25px var(--color-secondary-2);
+    cursor: pointer;
+    transition: all 0.2s ease-out;
+
+    &:hover,
+    &:active {
+        background-color: var(--color-primary-2-alpha);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+}
