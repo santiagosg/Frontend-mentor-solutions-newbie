@@ -231,6 +231,7 @@ body {
   background-color: var(--color-white);
   border-radius: 1.25rem;
   padding-bottom: 1.875rem;
+  max-width: 20.438rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,22 +246,24 @@ body {
 
 .card__hero {
   border-radius: 1.25rem 1.25rem 0 0;
-  margin-bottom: 1.875rem;
+  margin-bottom: 2rem;
 }
 
 .card__title {
-  margin: 0 1.5rem 1.25rem;
+  margin: 0 1.5rem 1rem;
   color: var(--color-secondary-3);
-  font-size: 1.5rem;
+  font-size: 1.375rem;
   font-weight: 900;
 }
 
 .card__description {
   margin: 0 2.5rem 1.875rem;
+  font-size: 1rem;
+  text-align: center;
 }
 
 .card__plan-music {
-  margin-bottom: 1.875rem;
+  margin-bottom: 1.5rem;
   width: 85%;
 }
 
@@ -271,8 +274,14 @@ body {
 
 .card__link {
   margin: 0 1.5rem 0;
-  font-size: 0.7rem;
+  font-size: 0.938rem;
   font-weight: 700;
+  -webkit-transition: color 0.2s ease-out;
+  transition: color 0.2s ease-out;
+}
+
+.card__link:hover {
+  color: var(--color-secondary-3);
 }
 
 .btn {
