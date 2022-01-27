@@ -244,9 +244,22 @@ body {
           align-items: center;
 }
 
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 28.125rem;
+    padding-bottom: 2.938rem;
+  }
+}
+
 .card__hero {
   border-radius: 1.25rem 1.25rem 0 0;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card__hero {
+    margin-bottom: 2.8rem;
+  }
 }
 
 .card__title {
@@ -256,10 +269,24 @@ body {
   font-weight: 900;
 }
 
+@media screen and (min-width: 768px) {
+  .card__title {
+    font-size: 1.75rem;
+    margin: 0 3rem 1rem;
+  }
+}
+
 .card__description {
   margin: 0 2.5rem 1.875rem;
   font-size: 1rem;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .card__description {
+    margin: 0 5rem 1.875rem;
+    font-size: 1.125rem;
+  }
 }
 
 .card__plan-music {
@@ -267,9 +294,23 @@ body {
   width: 85%;
 }
 
+@media screen and (min-width: 768px) {
+  .card__plan-music {
+    width: 75%;
+    margin-bottom: 2.5rem;
+  }
+}
+
 .card__btn {
   margin-bottom: 1.5rem;
   width: 85%;
+}
+
+@media screen and (min-width: 768px) {
+  .card__btn {
+    width: 78.67%;
+    margin-bottom: 2rem;
+  }
 }
 
 .card__link {
@@ -282,6 +323,7 @@ body {
 
 .card__link:hover {
   color: var(--color-secondary-3);
+  margin: 0 3rem 0;
 }
 
 .btn {
@@ -336,8 +378,20 @@ body {
   font-weight: 900;
 }
 
+@media screen and (min-width: 768px) {
+  .plan-music__name {
+    font-size: 1.063rem;
+  }
+}
+
 .plan-music__price {
   font-size: 0.875rem;
+}
+
+@media screen and (min-width: 768px) {
+  .plan-music__price {
+    font-size: 1.063rem;
+  }
 }
 
 .plan-music__link {
@@ -352,6 +406,12 @@ body {
 .plan-music__link:hover, .plan-music__link:active {
   color: var(--color-primary-2-alpha);
   text-decoration: none;
+}
+
+@media screen and (min-width: 768px) {
+  .plan-music__link {
+    font-size: 0.875rem;
+  }
 }
 
 .main {
@@ -374,5 +434,12 @@ body {
   background-size: contain;
   background-repeat: no-repeat;
   padding: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background: url(../images/pattern-background-desktop.svg), var(--color-primary-1);
+    background-repeat: no-repeat;
+  }
 }
 /*# sourceMappingURL=style.css.map */
