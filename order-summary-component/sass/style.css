@@ -224,6 +224,54 @@ body {
   color: var(--color-secondary-2);
 }
 
+.card {
+  -webkit-box-shadow: 0px 5px 25px var(--color-secondary-2);
+          box-shadow: 0px 5px 25px var(--color-secondary-2);
+  background-color: var(--color-white);
+  border-radius: 1.25rem;
+  padding-bottom: 1.875rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__hero {
+  border-radius: 1.25rem 1.25rem 0 0;
+  margin-bottom: 1.875rem;
+}
+
+.card__title {
+  margin: 0 1.5rem 1.25rem;
+  color: var(--color-secondary-3);
+  font-size: 1.5rem;
+  font-weight: 900;
+}
+
+.card__description {
+  margin: 0 2.5rem 1.875rem;
+}
+
+.card__plan-music {
+  margin-bottom: 1.875rem;
+}
+
+.card__btn {
+  margin-bottom: 1.5rem;
+}
+
+.card__link {
+  margin: 0 1.5rem 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
 .main {
   height: 100%;
   min-height: 100vh;
@@ -240,7 +288,9 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--color-primary-1);
-  padding: 0 1.25rem;
+  background: url(../images/pattern-background-mobile.svg), var(--color-primary-1);
+  background-size: contain;
+  background-repeat: no-repeat;
+  padding: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */
