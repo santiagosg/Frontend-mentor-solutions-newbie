@@ -1,4 +1,15 @@
 @charset "UTF-8";
+:root {
+  --color-primary-1: hsl(233, 47%, 7%);
+  --color-primary-2: hsl(244, 38%, 16%);
+  --color-primary-3: hsl(277, 64%, 61%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-white-alpha-1: hsla(0, 0%, 100%, 0.75);
+  --color-white-alpha-2: hsla(0, 0%, 100%, 0.6);
+  --main-typography: 'Inter', sans-serif;
+  --secondary-typography: 'Lexend Deca', sans-serif;
+}
+
 /**
  * Reset CSS PRO
  * Shamelessly borrowed from Eduardo Fierro:
@@ -205,6 +216,12 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--main-typography);
+  font-size: 0.938rem;
+  line-height: 1.4;
 }
 
 /**
