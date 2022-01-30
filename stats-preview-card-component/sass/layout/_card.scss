@@ -3,21 +3,48 @@
 // -----------------------------------------------------------------------------
 
 .card {
+  max-width: 31.25rem; // 500px
   background-color: var(--color-primary-2);
   color: var(--color-white-alpha-2);
   text-align: center;
   border-radius: 0.625rem; // 10px
 
+  @media screen and (min-width: 1200px) {
+    max-width: 69.375rem; // 1110px
+    display: flex;
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+
   &__hero {
-    height: 240px;
+    min-height: 240px;
+    max-height: 350px;
+    height: 51vw;
     background-image: url(../images/image-header-mobile.jpg);
     background-color: var(--color-primary-3);
     background-blend-mode: multiply;
+    background-size: cover;
+    background-position: top;
     border-radius: 0.625rem 0.625rem 0 0; // 10px
+
+    @media screen and (min-width: 1200px) {
+      min-height: unset;
+      max-height: unset;
+      height: auto;
+      width: 100%;
+      background-size: cover;
+      background-position: center;
+      border-radius: 0 0.625rem 0.625rem 0; // 10px
+    }
   }
 
   &__content {
     padding: 2.688rem 2.125rem 2.188rem; // 43px 34px 35px
+
+    @media screen and (min-width: 1200px) {
+      width: 88%;
+      padding: 4.5rem 7.188rem 4.125rem 4.688rem; // 72px 115px 66px 75px
+    }
   }
 
   &__title {
@@ -26,6 +53,16 @@
     font-size: 1.75rem; // 28px
     line-height: 1.1;
     font-weight: 700;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 2.25rem; // 36px
+      line-height: 1.2;
+      margin-bottom: 1.55rem; // 24px
+    }
+
+    & span {
+      color: var(--color-primary-3);
+    }
   }
 
   &__description {
@@ -34,12 +71,23 @@
     font-weight: 400;
     font-size: 0.938rem; // 15px
     line-height: 1.7;
+
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 4.375rem; // 70px
+      width: 95%;
+    }
   }
 
   &__data {
     display: flex;
     flex-direction: column;
     row-gap: 1.75rem; // 28px
+
+    @media screen and (min-width: 1200px) {
+      flex-direction: row;
+      column-gap: 4.063rem; // 65px
+      justify-content: left;
+    }
   }
 
   &__item {

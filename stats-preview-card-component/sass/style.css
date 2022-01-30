@@ -225,22 +225,60 @@ body {
 }
 
 .card {
+  max-width: 31.25rem;
   background-color: var(--color-primary-2);
   color: var(--color-white-alpha-2);
   text-align: center;
   border-radius: 0.625rem;
 }
 
+@media screen and (min-width: 1200px) {
+  .card {
+    max-width: 69.375rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: left;
+  }
+}
+
 .card__hero {
-  height: 240px;
+  min-height: 240px;
+  max-height: 350px;
+  height: 51vw;
   background-image: url(../images/image-header-mobile.jpg);
   background-color: var(--color-primary-3);
   background-blend-mode: multiply;
+  background-size: cover;
+  background-position: top;
   border-radius: 0.625rem 0.625rem 0 0;
+}
+
+@media screen and (min-width: 1200px) {
+  .card__hero {
+    min-height: unset;
+    max-height: unset;
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    border-radius: 0 0.625rem 0.625rem 0;
+  }
 }
 
 .card__content {
   padding: 2.688rem 2.125rem 2.188rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card__content {
+    width: 88%;
+    padding: 4.5rem 7.188rem 4.125rem 4.688rem;
+  }
 }
 
 .card__title {
@@ -251,12 +289,31 @@ body {
   font-weight: 700;
 }
 
+@media screen and (min-width: 1200px) {
+  .card__title {
+    font-size: 2.25rem;
+    line-height: 1.2;
+    margin-bottom: 1.55rem;
+  }
+}
+
+.card__title span {
+  color: var(--color-primary-3);
+}
+
 .card__description {
   margin-bottom: 2.5rem;
   font-family: var(--secondary-typography);
   font-weight: 400;
   font-size: 0.938rem;
   line-height: 1.7;
+}
+
+@media screen and (min-width: 1200px) {
+  .card__description {
+    margin-bottom: 4.375rem;
+    width: 95%;
+  }
 }
 
 .card__data {
@@ -268,6 +325,20 @@ body {
       -ms-flex-direction: column;
           flex-direction: column;
   row-gap: 1.75rem;
+}
+
+@media screen and (min-width: 1200px) {
+  .card__data {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-column-gap: 4.063rem;
+            column-gap: 4.063rem;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
 }
 
 .card__item-value {
@@ -304,6 +375,8 @@ body {
 }
 
 .main {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   position: relative;
   height: 100%;
   min-height: 100vh;
