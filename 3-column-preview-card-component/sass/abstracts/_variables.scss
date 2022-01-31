@@ -1,0 +1,19 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+    // COLOR CUSTOM PROPERTIES
+    --color-primary-1: hsl(31, 77%, 52%);  // Bright orange
+    --color-primary-2: hsl(184, 100%, 22%);  // Dark cyan
+    --color-primary-3: hsl(179, 100%, 13%);  // Very dark cyan
+  
+    --color-secondary-1: hsla(0, 0%, 100%, 0.75);  // Transparent white (paragraphs)
+    --color-secondary-2: hsl(0, 0%, 95%);  // Very light gray (background, headings, buttons)
+  
+    --color-white: hsl(0, 0%, 100%);
+  
+    // TYPOGRAPHY CUSTOM PROPERTIES
+    --main-typography: 'Lexend Deca', sans-serif;
+    --secondary-typography: 'Big Shoulders Display', cursive;
+  }

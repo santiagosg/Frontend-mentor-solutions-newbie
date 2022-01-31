@@ -1,4 +1,15 @@
 @charset "UTF-8";
+:root {
+  --color-primary-1: hsl(31, 77%, 52%);
+  --color-primary-2: hsl(184, 100%, 22%);
+  --color-primary-3: hsl(179, 100%, 13%);
+  --color-secondary-1: hsla(0, 0%, 100%, 0.75);
+  --color-secondary-2: hsl(0, 0%, 95%);
+  --color-white: hsl(0, 0%, 100%);
+  --main-typography: 'Lexend Deca', sans-serif;
+  --secondary-typography: 'Big Shoulders Display', cursive;
+}
+
 /**
  * Reset CSS PRO
  * Shamelessly borrowed from Eduardo Fierro:
@@ -205,6 +216,19 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--main-typography);
+  font-size: 0.938rem;
+  line-height: 1.4;
+  color: var(--color-secondary-1);
+}
+
+.footer__atribution {
+  position: relative;
+  padding: 0.5rem;
+  height: 3rem;
 }
 
 /**
