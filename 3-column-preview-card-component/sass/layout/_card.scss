@@ -1,0 +1,39 @@
+.card {
+  &__item {
+    padding: 3rem; // 48px
+
+    &:first-child {
+      background-color: var(--color-primary-1);
+      border-radius: 0.625rem 0.625rem 0 0; // 10px
+    }
+
+    &:nth-child(2) {
+      background-color: var(--color-primary-2);
+    }
+
+    &:last-child {
+      background-color: var(--color-primary-3);
+      border-radius: 0 0 0.625rem 0.625rem; // 10px
+    }
+  }
+
+  &__icon {
+    max-width: 4.063rem; // 65px
+    margin-bottom: 7.2vw;
+  }
+
+  &__title {
+    font-family: var(--secondary-typography);
+    color: var(--color-secondary-2);
+    font-size: 2.5rem; // 40px
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 6vw;
+  }
+
+  &__description {
+    width: 95%;
+    margin-bottom: 6.8vw;
+    line-height: 1.7;
+  }
+}
