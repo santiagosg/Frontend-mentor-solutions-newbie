@@ -7,7 +7,10 @@ body {
   color: var(--color-secondary-1);
 }
 .footer__atribution {
-  position: relative;
   padding: 0.5rem;
   height: 3rem;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: center;
 }

@@ -8,8 +8,16 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-primary-1);
     box-sizing: border-box;
     padding: 1.5rem;  // 24px
+    background-color: var(--color-primary-1);
+    background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: right 35vw bottom 45vh, left 35vw top 45vh;
+
+    @media screen and (min-width: 768px) {
+      background-position: right 50vw bottom 49vh, left 49vw top 50vh;
+    }
+    
   }
   

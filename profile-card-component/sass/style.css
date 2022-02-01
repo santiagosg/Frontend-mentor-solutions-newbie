@@ -222,23 +222,117 @@ body {
 }
 
 .footer__atribution {
-  position: relative;
   padding: 0.5rem;
   height: 3rem;
+  position: absolute;
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  max-width: 21.875rem;
+  width: 100%;
+  background-color: var(--color-white);
+  border-radius: 0.938rem;
+  overflow: hidden;
+}
+
+.card__header {
+  width: 100%;
+  height: 8.75rem;
+}
+
+.card__header img {
+  width: 100%;
+  height: 100%;
+}
+
+.card__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card__body-img {
+  width: 6.625rem;
+  border: 5px solid var(--color-white);
+  border-radius: 50%;
+  margin-top: -3.313rem;
+  margin-bottom: 1.25rem;
+}
+
+.card__body-title {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary-2);
+  margin-bottom: 5px;
+}
+
+.card__body-title span {
+  font-weight: 400;
+}
+
+.card__body-from {
+  font-size: 0.875rem;
+  margin-bottom: 1.375rem;
+}
+
+.card__footer {
+  height: 5.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.125rem 2.625rem 0.625rem 2.625rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  position: relative;
+}
+
+.card__footer::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #969696;
+  opacity: 0.24;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card__footer-value {
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: var(--color-primary-2);
+}
+
+.card__footer-data {
+  font-size: 0.625rem;
+  letter-spacing: 1.5px;
 }
 
 /**
  * Basic Attribution style for frontend challenges
  */
 .attribution {
-  position: absolute;
-  bottom: 1rem;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
   font-size: 0.688rem;
   text-align: center;
-  width: 90%;
   color: white;
 }
 
@@ -262,9 +356,18 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: var(--color-primary-1);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   padding: 1.5rem;
+  background-color: var(--color-primary-1);
+  background-image: url(../images/bg-pattern-top.svg), url(../images/bg-pattern-bottom.svg);
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 35vw bottom 45vh, left 35vw top 45vh;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    background-position: right 50vw bottom 49vh, left 49vw top 50vh;
+  }
 }
 /*# sourceMappingURL=style.css.map */
