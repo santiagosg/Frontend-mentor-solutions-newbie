@@ -1,0 +1,15 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-primary-1);
+    box-sizing: border-box;
+    padding: 1.5rem;  // 24px
+  }
+  

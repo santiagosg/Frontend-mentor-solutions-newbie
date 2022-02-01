@@ -1,3 +1,11 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: var(--main-typography);
+  color: var(--color-secondary-1);
+}
 .footer__atribution {
   position: relative;
   padding: 0.5rem;

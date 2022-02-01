@@ -1,35 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
 
   <title>Frontend Mentor | Profile card component</title>
 
   <link rel="stylesheet" href="./sass/style.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+
 </head>
+
 <body>
-  Victor Crest
-  26
-  London
 
-  80K
-  Followers
+  <main class="main">
+    <article class="card">
+      <div class="card__header">
+        <img src="images/bg-pattern-card.svg" alt="background header card">
+      </div>
+      <div class="card__body">
+        <img src="images/image-victor.jpg" alt="Victor profile photo" class="card__body-img">
+        <h1 class="card__body-title">Victor Crest <span>26</span></h1>
+        <p class="card__body-from">London</p>
+      </div>
+      <div class="card__footer">
+        <div class="card__footer-item">
+          <p class="card__footer-value">80K</p>
+          <h2 class="card__footer-data">Followers</h2>
+        </div>
+        <div class="card__footer-item">
+          <p class="card__footer-value">803K</p>
+          <h2 class="card__footer-data">Likes</h2>
+        </div>
+        <div class="card__footer-item">
+          <p class="card__footer-value">1.4K</p>
+          <h2 class="card__footer-data">Photos</h2>
+        </div>
+      </div>
+    </article>
 
-  803K
-  Likes
-
-  1.4K
-  Photos
-
-  <footer class="footer__atribution">
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="https://santiagosg.github.io">santiagosg</a>.
-    </div>
-  </footer>
+    <footer class="footer__atribution">
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="https://santiagosg.github.io">santiagosg</a>.
+      </div>
+    </footer>
+  </main>
 
 </body>
+
 </html>

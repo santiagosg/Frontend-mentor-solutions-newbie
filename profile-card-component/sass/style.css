@@ -1,4 +1,13 @@
 @charset "UTF-8";
+:root {
+  --color-primary-1: hsl(185, 75%, 39%);
+  --color-primary-2: hsl(229, 23%, 23%);
+  --color-primary-3: hsl(227, 10%, 46%);
+  --color-secondary-1: hsl(0, 0%, 59%);
+  --color-white: hsl(0, 0%, 100%);
+  --main-typography: "Kumbh Sans", sans-serif;
+}
+
 /**
  * Reset CSS PRO
  * Shamelessly borrowed from Eduardo Fierro:
@@ -207,6 +216,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  font-family: var(--main-typography);
+  color: var(--color-secondary-1);
+}
+
 .footer__atribution {
   position: relative;
   padding: 0.5rem;
@@ -231,5 +245,26 @@ body {
 .attribution > a {
   display: inline-block;
   color: #3e52a3;
+}
+
+.main {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: var(--color-primary-1);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 1.5rem;
 }
 /*# sourceMappingURL=style.css.map */

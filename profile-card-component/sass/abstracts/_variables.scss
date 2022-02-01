@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+  // COLOR CUSTOM PROPERTIES
+  --color-primary-1: hsl(185, 75%, 39%); // Dark cyan
+  --color-primary-2: hsl(229, 23%, 23%); // Very dark desaturated blue
+  --color-primary-3: hsl(227, 10%, 46%); // Dark grayish blue
+
+  --color-secondary-1: hsl(0, 0%, 59%); // Dark gray
+
+  --color-white: hsl(0, 0%, 100%);
+
+  // TYPOGRAPHY CUSTOM PROPERTIES
+  --main-typography: "Kumbh Sans", sans-serif;
+}
