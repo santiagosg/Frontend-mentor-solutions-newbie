@@ -2,6 +2,12 @@
 // This file contains very basic styles.
 // -----------------------------------------------------------------------------
 
+body {
+  font-family: var(--main-typography);
+  color: var(--color-secondary-2);
+  font-size: 0.75rem;  // 12px
+}
+
   .footer__atribution {
     width: 100%;
     padding: 0.5rem;
