@@ -1,0 +1,39 @@
+.card {
+  width: 100%;
+  max-width: 57.5rem; // 920px
+  min-height: 535px;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 142px 1fr;
+  justify-items: center;
+
+  border-radius: 1.438rem; // 23px
+  background-color: var(--color-white);
+  padding: 0 1.563rem 1.563rem; // 25px
+
+  &__illustration {
+    width: 15rem; // 240px
+    background-image: url(../images/bg-pattern-mobile.svg);
+    background-repeat: no-repeat;
+
+    &-box {
+      display: none;
+    }
+
+    &-woman {
+      margin-top: -110px;
+    }
+  }
+
+  &__faq {
+    width: 100%;
+    
+    &-heading {
+      font-size: 1.875rem; // 30px
+      font-weight: 700;
+      text-align: center;
+      color: var(--color-secondary-1);
+      margin-bottom: 1.688rem;  // 27px
+    }
+  }
+}

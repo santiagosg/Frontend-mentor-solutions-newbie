@@ -3,12 +3,12 @@
 // -----------------------------------------------------------------------------
 
 .main {
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 1.5rem;  // 24px
- 
-  }
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 1.5rem; // 24px
+  background: linear-gradient(var(--color-primary-1), var(--color-primary-2));
+}
