@@ -10,30 +10,113 @@
   border-radius: 1.438rem; // 23px
   background-color: var(--color-white);
   padding: 0 1.563rem 1.563rem; // 25px
+  box-shadow: 0px 30px 50px -20px var(--color-secondary-1);
+
+  @media screen and (min-width: 768px) {
+    min-height: 510px;
+    grid-template-columns: 44% 1fr;
+    grid-template-rows: 1fr;
+    column-gap: 5rem;
+    padding: 0 1.563rem 0 0;
+  }
 
   &__illustration {
     width: 15rem; // 240px
     background-image: url(../images/bg-pattern-mobile.svg);
     background-repeat: no-repeat;
 
+    @media screen and (min-width: 768px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr;
+      width: 100%;
+      background-image: url(../images/bg-pattern-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: 101% 68%;
+      background-size: auto;
+    }
+
     &-box {
       display: none;
+      width: 191px;
+      left: -117px;
+      top: 112px;
+
+      @media screen and (min-width: 768px) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        display: block;
+        position: relative;
+        left: -19%;
+        top: 228px;
+        z-index: 1;
+        max-width: 116px;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 980px) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        display: block;
+        position: relative;
+        left: -23%;
+        top: 204px;
+        z-index: 1;
+        max-width: 191px;
+        width: 100%;
+      }
+    }
+
+    &-figure {
+      @media screen and (min-width: 768px) {
+        grid-column: 1 / span 1;
+        grid-row: 1 / span 1;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
     }
 
     &-woman {
       margin-top: -110px;
+
+      @media screen and (min-width: 768px) {
+        margin-top: 0;
+        position: relative;
+        left: -83px;
+        top: -6px;
+        max-width: 471px;
+        width: 100%;
+      }
+
+      @media screen and (min-width: 980px) { 
+        width: 471px;
+      }
     }
   }
 
   &__faq {
     width: 100%;
-    
+
+    @media screen and (min-width: 768px) {
+      align-self: center;
+      margin-bottom: 30px;
+      padding-left: 3px;
+    }
+
     &-heading {
       font-size: 1.875rem; // 30px
       font-weight: 700;
       text-align: center;
       color: var(--color-secondary-1);
-      margin-bottom: 1.688rem;  // 27px
+      margin-bottom: 2rem; // 32px
+
+      @media screen and (min-width: 768px) {
+        text-align: left;
+        margin-bottom: 1.98rem;
+        padding-top: 1rem;  // 16px
+      }
     }
   }
 }

@@ -8,10 +8,5 @@ for (i = 0; i < accordionItem.length; i++) {
 
     /* Toggle between hiding and showing the active panel */
     var panel = this.lastElementChild;
-    
-    /* Set a delay to aply de --active class to the content */
-    /*setTimeout(() => {
-        panel.classList.toggle("accordion__content--active");
-      }, 100);*/
   });
 }

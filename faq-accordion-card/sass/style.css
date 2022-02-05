@@ -257,6 +257,21 @@ body {
   border-radius: 1.438rem;
   background-color: var(--color-white);
   padding: 0 1.563rem 1.563rem;
+  -webkit-box-shadow: 0px 30px 50px -20px var(--color-secondary-1);
+          box-shadow: 0px 30px 50px -20px var(--color-secondary-1);
+}
+
+@media screen and (min-width: 768px) {
+  .card {
+    min-height: 510px;
+    -ms-grid-columns: 44% 1fr;
+        grid-template-columns: 44% 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    -webkit-column-gap: 5rem;
+            column-gap: 5rem;
+    padding: 0 1.563rem 0 0;
+  }
 }
 
 .card__illustration {
@@ -265,16 +280,120 @@ body {
   background-repeat: no-repeat;
 }
 
+@media screen and (min-width: 768px) {
+  .card__illustration {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+    width: 100%;
+    background-image: url(../images/bg-pattern-desktop.svg);
+    background-repeat: no-repeat;
+    background-position: 101% 68%;
+    background-size: auto;
+  }
+}
+
 .card__illustration-box {
   display: none;
+  width: 191px;
+  left: -117px;
+  top: 112px;
+}
+
+@media screen and (min-width: 768px) {
+  .card__illustration-box {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    display: block;
+    position: relative;
+    left: -19%;
+    top: 228px;
+    z-index: 1;
+    max-width: 116px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .card__illustration-box {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    display: block;
+    position: relative;
+    left: -23%;
+    top: 204px;
+    z-index: 1;
+    max-width: 191px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card__illustration-figure {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 1;
+    grid-column: 1 / span 1;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1 / span 1;
+    overflow: hidden;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .card__illustration-woman {
   margin-top: -110px;
 }
 
+@media screen and (min-width: 768px) {
+  .card__illustration-woman {
+    margin-top: 0;
+    position: relative;
+    left: -83px;
+    top: -6px;
+    max-width: 471px;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .card__illustration-woman {
+    width: 471px;
+  }
+}
+
 .card__faq {
   width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .card__faq {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-bottom: 30px;
+    padding-left: 3px;
+  }
 }
 
 .card__faq-heading {
@@ -282,17 +401,31 @@ body {
   font-weight: 700;
   text-align: center;
   color: var(--color-secondary-1);
-  margin-bottom: 1.688rem;
+  margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .card__faq-heading {
+    text-align: left;
+    margin-bottom: 1.98rem;
+    padding-top: 1rem;
+  }
 }
 
 /**
  * Basic Attribution style for accordion component
  */
+@media screen and (min-width: 768px) {
+  .accordion {
+    max-width: 346px;
+  }
+}
+
 .accordion__item {
   border-bottom: 1px solid var(--color-secondary-3);
   padding: 1rem 0 0.938rem;
-  -webkit-transition: all .2s ease-out;
-  transition: all .2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
 }
 
 .accordion__item--selected {
@@ -310,6 +443,12 @@ body {
   -webkit-column-gap: 0.625rem;
           column-gap: 0.625rem;
   cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__header {
+    margin-right: 0.938rem;
+  }
 }
 
 .accordion__toggle {
@@ -341,6 +480,16 @@ body {
   font-weight: 400;
   -webkit-transition: all 0.3s ease-out;
   transition: all 0.3s ease-out;
+}
+
+@media screen and (min-width: 768px) {
+  .accordion__title {
+    font-size: 0.875rem;
+  }
+}
+
+.accordion__header:hover .accordion__title {
+  color: #e28c74;
 }
 
 .accordion__item--selected .accordion__title {
