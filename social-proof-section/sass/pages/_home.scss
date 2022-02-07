@@ -1,6 +1,15 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+body {
+  @media screen and (min-width: 1080px) {
+    background-color: var(--color-white);
+    background-image: url(../images/bg-pattern-top-desktop.svg),
+      url(../images/bg-pattern-bottom-desktop.svg);
+    background-repeat: no-repeat, no-repeat;
+    background-position: top left, bottom right;
+  }
+}
 
 .main {
   min-height: 100vh;
@@ -13,6 +22,23 @@
     url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
+
+  @media screen and (min-width: 1080px) {
+    display: grid;
+    grid-template-columns: 45% 1fr;
+    grid-template-rows: repeat(4, min-content);
+    column-gap: 70px;
+    align-items: center;
+
+    max-width: 1156px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+
+    background-color: transparent;
+    background-image: none;
+    padding-top: 130px;
+  }
 }
 
 .heading-1 {
@@ -22,6 +48,14 @@
   font-weight: 700;
   text-align: center;
   margin-bottom: 1.5rem; // 24px
+
+  @media screen and (min-width: 1080px) {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 1;
+    font-size: 45px;
+    text-align: left;
+    margin-bottom: 0.875rem;  // 14px
+  }
 }
 
 .paragraph {
@@ -29,4 +63,11 @@
   line-height: 1.66;
   text-align: center;
   margin-bottom: 2.438rem; // 39px
+
+  @media screen and (min-width: 1080px) {
+    width: 85%;
+    grid-column: 1 / span 1;
+    grid-row: 2 / span 1;
+    text-align: left;
+  }
 }

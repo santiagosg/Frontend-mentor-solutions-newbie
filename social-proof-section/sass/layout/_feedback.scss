@@ -4,10 +4,36 @@
   row-gap: 0.75rem; // 12px
   margin-bottom: 3.125rem; // 50px
 
+  @media screen and (min-width: 1080px) {
+    grid-column: 1 / span 2;
+    grid-row: 3 / span 1;
+
+    flex-direction: row;
+    column-gap: 30px;
+    margin-top: 31px;
+  }
+
   &__item {
     background-color: var(--color-primary-1);
     border-radius: 0.5rem;
     padding: 2.5rem 2rem 2rem; // 40px 32px 32px
+
+    @media screen and (min-width: 1080px) {
+      max-width: 350px;
+      padding-bottom: 2.313rem; // 37px
+    }
+
+    &:nth-child(2) {
+      @media screen and (min-width: 1080px) {
+        transform: translateY(1rem);
+      }
+    }
+
+    &:last-child {
+      @media screen and (min-width: 1080px) {
+        transform: translateY(2rem);
+      }
+    }
   }
 
   &__user {
