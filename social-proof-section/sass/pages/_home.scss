@@ -3,16 +3,30 @@
 // -----------------------------------------------------------------------------
 
 .main {
-  height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  min-height: 100vh;
+  height: auto;
   box-sizing: border-box;
   padding: 1.5rem; // 24px
+  padding-top: 80px;
   background-color: var(--color-white);
   background-image: url(../images/bg-pattern-top-mobile.svg),
     url(../images/bg-pattern-bottom-mobile.svg);
   background-repeat: no-repeat, no-repeat;
   background-position: top, bottom;
+}
+
+.heading-1 {
+  color: var(--color-primary-1);
+  font-size: 1.875rem; // 30px
+  line-height: 1.07;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1.5rem; // 24px
+}
+
+.paragraph {
+  font-size: 0.938rem; // 15px
+  line-height: 1.66;
+  text-align: center;
+  margin-bottom: 2.438rem; // 39px
 }

@@ -1,0 +1,31 @@
+.rating {
+  display: flex;
+  flex-direction: column;
+  row-gap: 0.75rem; // 12px
+  margin-bottom: 2.938rem; // 47px
+
+  &__item {
+    background-color: var(--color-secondary-2);
+    border-radius: 0.5rem;
+    padding: 0.938rem; // 15px
+  }
+
+  &__stars {
+    display: flex;
+    column-gap: 0.563rem; // 9px
+    justify-content: center;
+    margin-bottom: 0.813rem; // 13px;
+  }
+
+  &__star {
+    width: 1rem;
+    height: auto;
+  }
+
+  &__text {
+    color: var(--color-primary-1);
+    text-align: center;
+    font-size: 13px;
+    font-weight: 700;
+  }
+}
