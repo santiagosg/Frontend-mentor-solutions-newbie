@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+  // COLOR CUSTOM PROPERTIES
+  // hsl colors
+  --color-primary-1: hsl(300, 43%, 22%); // Very Dark Magenta
+  --color-primary-2: hsl(333, 80%, 67%); // Soft Pink
+
+  --color-secondary-1: hsl(303, 10%, 53%); // Dark Grayish Magenta
+  --color-secondary-2: hsl(300, 24%, 96%); // Light Grayish Magenta
+
+  --color-white: hsl(0, 0%, 100%); // White
+
+  // TYPOGRAPHY CUSTOM PROPERTIES
+  --main-typography: "Spartan", sans-serif;
+}

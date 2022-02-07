@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+body {
+  font-family: var(--main-typography);
+  color: var(--color-secondary-1);
+}
+
+  .footer__atribution {
+    width: 100%;
+    padding: 0.5rem;
+    height: 3rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
