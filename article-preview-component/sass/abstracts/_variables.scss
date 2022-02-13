@@ -1,0 +1,18 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+  // COLOR CUSTOM PROPERTIES
+  // hsl colors
+  --color-primary-1: hsl(217, 19%, 35%); // Very Dark Grayish Blue
+  --color-primary-2: hsl(214, 17%, 51%); // Desaturated Dark Blue
+
+  --color-secondary-1: hsl(212, 23%, 69%); // Grayish Blue
+  --color-secondary-2: hsl(210, 46%, 95%); // Light Grayish Blue
+
+  --color-white: hsl(0, 0%, 100%); // White
+
+  // TYPOGRAPHY CUSTOM PROPERTIES
+  --main-typography: 'Manrope', sans-serif;
+}
