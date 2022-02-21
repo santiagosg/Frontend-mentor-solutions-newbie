@@ -1,0 +1,32 @@
+.card {
+  background-color: var(--color-white);
+  border-radius: 0.625rem; // 10px
+  overflow: hidden;
+
+  &__img {
+    height: 12.5rem; // 200px
+    object-fit: cover;
+    object-position: 0% 25%;
+  }
+
+  &__content {
+    padding: 2.313rem 2rem 1.563rem; // 37px 32px 25px
+  }
+
+  &__title {
+    font-weight: 700;
+    font-size: 1.063rem; // 17px
+    margin-bottom: 0.75rem; // 12px
+    text-align: left;
+    line-height: 1.4;
+    word-spacing: -2px;
+  }
+
+  &__text {
+    font-size: 0.813rem; // 13px
+    font-weight: 500;
+    line-height: 1.6;
+    padding-right: 5px;
+    hyphens: none;
+  }
+}

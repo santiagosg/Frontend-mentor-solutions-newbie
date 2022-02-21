@@ -222,6 +222,43 @@ body {
   background-color: var(--color-secondary-2);
 }
 
+.card {
+  background-color: var(--color-white);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+
+.card__img {
+  height: 12.5rem;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 25%;
+     object-position: 0% 25%;
+}
+
+.card__content {
+  padding: 2.313rem 2rem 1.563rem;
+}
+
+.card__title {
+  font-weight: 700;
+  font-size: 1.063rem;
+  margin-bottom: 0.75rem;
+  text-align: left;
+  line-height: 1.4;
+  word-spacing: -2px;
+}
+
+.card__text {
+  font-size: 0.813rem;
+  font-weight: 500;
+  line-height: 1.6;
+  padding-right: 5px;
+  -webkit-hyphens: none;
+      -ms-hyphens: none;
+          hyphens: none;
+}
+
 .main {
   min-height: 100vh;
   height: auto;
