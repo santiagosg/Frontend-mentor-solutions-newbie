@@ -8,11 +8,6 @@
   --main-typography: 'Manrope', sans-serif;
 }
 
-body {
-  font-family: var(--main-typography);
-  color: var(--color-primary-2);
-}
-
 /**
  * Reset CSS PRO
  * Shamelessly borrowed from Eduardo Fierro:
@@ -219,5 +214,19 @@ body {
   -webkit-font-smoothing: antialiased;
   /* opcional */
   -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--main-typography);
+  color: var(--color-primary-2);
+  background-color: var(--color-secondary-2);
+}
+
+.main {
+  min-height: 100vh;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 4.625rem 1.5rem 5.563rem;
 }
 /*# sourceMappingURL=style.css.map */
