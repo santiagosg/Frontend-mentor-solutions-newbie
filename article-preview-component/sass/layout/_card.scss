@@ -2,6 +2,7 @@
   background-color: var(--color-white);
   border-radius: 0.625rem; // 10px
   overflow: hidden;
+  position: relative;
 
   &__img {
     height: 12.5rem; // 200px
@@ -10,7 +11,7 @@
   }
 
   &__content {
-    padding: 2.313rem 2rem 1.563rem; // 37px 32px 25px
+    padding: 2.313rem 2rem 1.125rem; // 37px 32px 18px
   }
 
   &__title {
@@ -25,8 +26,9 @@
   &__text {
     font-size: 0.813rem; // 13px
     font-weight: 500;
-    line-height: 1.6;
+    line-height: 1.55;
     padding-right: 5px;
     hyphens: none;
+    margin-bottom: 1.875rem; // 30px
   }
 }
