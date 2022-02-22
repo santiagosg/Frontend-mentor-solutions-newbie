@@ -3,6 +3,7 @@
   border-radius: 0.625rem; // 10px
   overflow: hidden;
   position: relative;
+  max-width: 25rem; // 400px
 
   &__img {
     height: 12.5rem; // 200px
@@ -30,5 +31,37 @@
     padding-right: 5px;
     hyphens: none;
     margin-bottom: 1.875rem; // 30px
+  }
+}
+
+/* Medias Query */
+@media screen and (min-width: 768px) {
+  .card {
+    max-width: 45.625rem; // 730px
+    min-height: 17.5rem; // 280px
+    display: flex;
+    overflow: unset;
+
+    &__img {
+      width: 17.813rem; // 285px
+      height: auto;
+      border-radius: 10px 0 0 10px;
+    }
+
+    &__content {
+      padding: 2.063rem 2.5rem 1rem; // 33px 40px 16px
+    }
+
+    &__title {
+      font-size: 1.188rem; // 19px
+      word-spacing: -2px;
+      letter-spacing: 1px;
+      line-height: 1.5;
+      hyphens: none;
+    }
+
+    &__text {
+      margin-bottom: 1rem; // 16px
+    }
   }
 }
