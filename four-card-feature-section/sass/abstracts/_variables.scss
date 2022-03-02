@@ -1,0 +1,21 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide custom properties.
+// -----------------------------------------------------------------------------
+
+:root {
+    // COLOR CUSTOM PROPERTIES
+    --color-primary-1: hsl(0, 78%, 62%);  // Red
+    --color-primary-2: hsl(180, 62%, 55%);  // Cyan
+    --color-primary-3: hsl(34, 97%, 64%);  // Orange
+    --color-primary-4: hsl(212, 86%, 64%);  // Blue
+  
+    --color-neutral-1: hsl(234, 12%, 34%);  // Very Dark Blue
+    --color-neutral-2: hsl(229, 6%, 66%);  // Grayish Blue
+    --color-neutral-3: hsl(0, 0%, 98%);  // Very Light Gray
+
+    --color-white: hsl(0, 0%, 100%);  // White
+  
+    // TYPOGRAPHY CUSTOM PROPERTIES
+    --main-typography: 'Poppins', sans-serif;
+  }
+  
