@@ -224,4 +224,12 @@ body {
   color: var(--color-neutral-2);
   background-color: var(--color-neutral-3);
 }
+
+.main {
+  min-height: 100vh;
+  height: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5.625rem 2rem 4.875rem;
+}
 /*# sourceMappingURL=style.css.map */
