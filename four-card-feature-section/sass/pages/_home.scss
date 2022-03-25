@@ -7,3 +7,25 @@
     box-sizing: border-box;
     padding: 5.625rem 2rem 4.875rem; // 90px 32px 78px
   }
+
+  .heading-1 {
+    font-size: 1.5rem;  // 24px
+    font-weight: 200;
+    line-height: 1.5;
+    color: var(--color-neutral-1);
+    margin-bottom: 1.063rem;  // 17px
+    margin-left: 0.563rem;  // 9px
+    margin-right: 0.563rem;  // 9px
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  .subheading-1 {
+    font-size: 0.938rem;  // 15px
+    line-height: 1.65;
+    margin-bottom: 4.75rem;  // 76px
+    margin-left: 0.563rem;  // 9px
+    margin-right: 0.563rem;  // 9px
+  }
