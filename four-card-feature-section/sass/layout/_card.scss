@@ -5,7 +5,7 @@
   border-radius: 0.438rem; // 7px
   position: relative;
   overflow: hidden;
-  padding: 1.875rem 1.75rem 1.75rem 1.875rem;  // 30px 28px 28px 30px
+  padding: 1.875rem 1.75rem 1.75rem 1.875rem; // 30px 28px 28px 30px
 
   &::before {
     content: "";
@@ -50,5 +50,26 @@
     width: 3.563rem; // 57px
     height: auto;
     float: right;
+  }
+}
+
+/* Medias Query */
+@media screen and (min-width: 768px) {
+  .card {
+    padding-top: 34px;
+    padding-bottom: 30px;
+  }
+
+  .card__heading {
+    margin-bottom: 14px;
+  }
+
+  .card__description {
+    margin-bottom: 37px;
+  }
+
+  .card__icon {
+    width: 66px;
+    margin-right: 3px;
   }
 }

@@ -1,0 +1,16 @@
+/**
+ * Basic Attribution style for frontend challenges
+ */
+ footer {
+  margin-top: 30px;
+}
+
+.attribution {
+  font-size: 0.688rem;
+  text-align: center;
+
+  & > a {
+    display: inline-block;
+    color: hsl(228, 45%, 44%);
+  }
+}
